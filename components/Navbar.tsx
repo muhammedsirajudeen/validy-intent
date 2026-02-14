@@ -39,12 +39,7 @@ export default function Navbar({ onEarlyAccess }: NavbarProps) {
             <div className="max-w-[1200px] mx-auto px-6 flex items-center justify-between h-16">
                 {/* Logo */}
                 <a href="#" className="flex items-center gap-2" style={{ fontFamily: "var(--font-sora)" }}>
-                    <div
-                        className="w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold"
-                        style={{ background: "var(--accent)", color: "var(--bg-primary)" }}
-                    >
-                        V
-                    </div>
+                    <img src="/icon.png" alt="Validy Logo" className="w-8 h-8 rounded-lg" />
                     <span className="text-lg font-semibold" style={{ color: "var(--text-primary)" }}>
                         Validy
                     </span>
