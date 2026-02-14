@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Sora, DM_Sans } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 const sora = Sora({
   variable: "--font-sora",
@@ -44,6 +45,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${sora.variable} ${dmSans.variable} bg-background text-foreground antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
