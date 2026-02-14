@@ -1,0 +1,16 @@
+services:
+  mongodb:
+    image: mongo:7
+    container_name: validy-mongodb
+    restart: unless-stopped
+    ports:
+      - "27020:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: validy
+      MONGO_INITDB_ROOT_PASSWORD: validy123
+      MONGO_INITDB_DATABASE: validy
+    volumes:
+      - validy_mongo_data:/data/db
+
+volumes:
+  validy_mongo_data:
